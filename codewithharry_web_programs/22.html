@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector info</title>
+    <style>
+        h1{
+            background-color: rebeccapurple;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div p{ (for of any p inside p)
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        } */
+        div > p{/*for p direct inside of div  */
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        }
+
+        div +p{
+            /* it is p right after div */
+            color: aqua;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>More on selector</h1>
+    <div class="co">
+        <div class="row">
+            <ul>
+                <li class="class"><p>1st</p></li>
+                <li class="class">2nd</li>
+            </ul>
+            <p> this is para </p>
+        </div>
+        <p>this is another para</p>
+    </div>
+    <p>this is outermost para</p>
+</body> 
+</html>

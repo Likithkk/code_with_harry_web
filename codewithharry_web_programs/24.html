@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEfore and after pseudo selector</title>
+    <style>
+        section{
+            
+            flex-direction: column;
+            text-align: center;
+        }
+        .nav1{
+            display: flex;
+            font-size: 20px;
+        }
+        body{
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+        li{
+            list-style: none;
+            padding: 34px 20px ;
+        }
+        header::before{
+            content: "";
+            position: absolute;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        /* section::before{
+            content: "this is content"
+        } */
+        hr{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav1">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, est.</p>
+        </section>
+        <hr>
+    </header>
+</body>
+</html>

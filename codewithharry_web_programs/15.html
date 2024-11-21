@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psedo selector &more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: aqua;
+            padding: 3px;
+            margin: 34px;
+            width: 600px;
+
+        }
+        a{
+            text-decoration: dotted;
+        }
+        a:hover{
+            color: springgreen;
+            background-color:bisque ;
+        }
+        a:visited{
+            color: violet;
+        }
+        a:active{
+            background-color: blueviolet;
+        }
+        .btn{
+            background-color: tomato;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            color: springgreen;
+            background-color:bisque ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="c1">
+        <h3>Heading</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, error!
+        </p>
+        <a href="https://www.google.com" class="btn">Read more</a>
+        <button class="btn"> Contact us</button>
+    </div>
+</body>
+</html>

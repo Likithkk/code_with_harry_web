@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media file</title>
+    <style>
+        .box{
+            background-color: red;
+            color: blue;
+            display: none;
+            font-size: 72px;
+            text-align: center;
+        }
+        @media (max-width:100em)  {
+            #box1{
+                display: block;
+            }
+        }
+        @media (max-width:120em) and (min-width:110em)  {
+            #box1{
+                display: block;
+            }
+        }
+        @media (max-width:130em) and (min-width:125m)  {
+            #box1{
+                display: block;
+            }
+        }
+        @media (max-width:250em) and (min-width:300em)  {
+            #box1{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1st</div>
+    <div class="box" id="box2">2nd</div>
+    <div class="box" id="box3">3rd</div>
+    <div class="box" id="box4">4th</div>
+</body>
+</html>

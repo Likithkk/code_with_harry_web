@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        .contain{
+            display: flex;
+            height: 534px;
+            width: 100%;
+            border: 2px solid red;
+            
+            /* flex box property */
+            /* flex-direction: column;
+            flex-direction: column-reverse; */
+            
+            /* flex-wrap: wrap-reverse; */
+            /* default-nowrap */
+
+            /* flex-flow:column-reverse wrap; */
+
+            justify-content: space-around;
+
+            align-items: center;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid black;
+            padding: 2px;
+            margin: 10px;
+        }
+        #item1{
+            order: 2;
+            flex-grow: 3;
+            flex-shrink: 2;
+        }
+        #item2{
+            flex-wrap: wrap-reverse;
+        }
+        #item3{
+            flex-grow: 5;
+        }
+        #item4{
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox by harry</h1>
+    <div class="contain">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+        <div class="item" id="item6">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="c">
+        This is about loops
+    </div>
+    <script>
+        console.log("This is loop");
+        // let i=0;
+        // for(i=0;i<3;i++){
+        //     console.log(i);
+        // }
+
+        let fri=["Rohan","Sanjeev","Deepti"];
+        // for (let index = 0; index < fri.length; index++) {
+        //     console.log("Hello ," + fri[index]);
+        // }
+
+        // fri.forEach(function f(element){
+        //     console.log("hello" + element)
+        // });
+
+        // for (element of fri){
+        //     console.log("Hello,"+element);
+        // }
+
+        let employ = {
+            name:"Harish",
+            salary:2,
+            chal : "cgh",
+        }
+
+        for(key in employ){
+             console.log(`the ${key} of employ is ${employ[key]}`);
+        }
+
+        let i=0;
+        while(i<4){
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+
+        let j=23;
+        do{
+            console.log(`${j} is less than 4 -> by do while`);
+            j++;
+        }while(j<4);
+
+    </script>
+
+</body>
+</html>

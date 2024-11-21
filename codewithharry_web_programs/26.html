@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables / custom properties</title>
+    <style>
+        .box{
+            --box-color:blue;
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid brown;
+            margin: 2px 3px;
+            box-shadow:3px 3px var(--box-color);
+        }
+        /* -- create a local var */
+        /* to make it global use
+        :root{
+            --
+            --
+        } */
+        .con{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
